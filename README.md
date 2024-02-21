@@ -17,16 +17,16 @@ Usage
 ```shell
 pack build <image-name> \
     --path <cairo-path> \
-    --buildpack ghcr.io/amp-buildpacks/scarb \
+    --buildpack ghcr.io/amp-buildpacks/starknet-foundry \
     --builder paketobuildpacks/builder-jammy-full
 ```
 
 For example:
 
 ```shell
-pack build scarb \
+pack build starknet-foundry \
     --path ./samples/hello_scarb \
-    --buildpack ghcr.io/amp-buildpacks/scarb \
+    --buildpack ghcr.io/amp-buildpacks/starknet-foundry \
     --builder paketobuildpacks/builder-jammy-full
 ```
 
@@ -39,7 +39,7 @@ docker run -u <uid>:<gid> -it <image-name>
 For example:
 
 ```shell
-docker run -u 1001:cnb -it scarb
+docker run -u 1001:cnb -it starknet-foundry
 ```
 
 ## Contributing
